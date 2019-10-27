@@ -1,0 +1,167 @@
+body {
+    font-family: CuteFont-Regular;
+    /*  use em for size or another relative measurement */
+    font-size: 18px;
+    background-image: url(../media/Background_green.jpg);
+    /* size should be should be cover or contain */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+footer, header{
+    opacity: 80%;
+    width: 100%;
+    height: 30px;
+    Background: rgb(36, 128, 85);
+    color: rgb(24, 211, 40);
+    text-shadow: 1px 1px 1px black;
+    font-family: CuteFront-Regular;
+}
+article{
+   /* use the settings shown below */
+    display: flex;
+    flex-direction:column;
+    height:17%;
+    width: 33%;
+    Background: rgb(47, 116, 62);
+    box-shadow: 3px 3px 3px rgb(76, 206, 50);
+    color: rgb(24, 211, 40);
+    text-shadow: 1px 1px 1px black;
+    align-self: center;
+    text-align: center;
+    font-family: CuteFront-Regular;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+button{
+    width: 8%;
+    height: 30px;
+    Background: rgb(47, 116, 62);
+    color: rgb(24, 211, 40);
+    text-shadow: 1px 1px 1px black;
+    align-self: center;
+    font-family: CuteFront-Regular;
+    justify-content:space-between;
+    margin-left: 12%;
+}
+image{
+    width: 90%;
+    height: 90%;
+}
+section{
+    flex:1;
+    background-color: rgb(105, 211, 146);
+    /*  use % for padding, height and width */
+    padding: 1%;
+    min-width: 20%;
+    max-width: 35%;
+    min-height: 5%;
+   /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
+    opacity: 60%;
+}
+h1{
+    font-family: CuteFont-Regular;
+   /*  use em for size or another relative measurement */
+    font-size: 24px;
+    font-weight: 700px;
+    text-align: center;
+    background: rgb(47, 116, 62);
+    width: 33%;
+    /* box-shadow settings can be whatever you want */
+    box-shadow: 3px 3px 3px rgb(76, 206, 50);
+    color: rgb(24, 211, 40);
+    text-shadow: 1px 1px 1px black;
+    text-align: left;
+}
+h2{
+    font-family: CuteFont-Regular;
+    color: rgb(60, 172, 75);
+    text-align: center;
+   /*  use em for size or another relative measurement */
+    font-size: 24px;
+    text-shadow: 2px;
+    /*  use % for width */
+    width: 20%;
+    background-color: rgb(12, 255, 65);
+    /* can use pixels for padding */
+    padding: 2px;
+   /* opacity is optional - if you have a background photo, it will allow the photo to show through the color */
+    opacity: 80%;
+    /*  border-radius should be pixels */
+    border-radius: 4px;
+}
+nav {
+    margin:0px;
+    width:100%;
+    height:auto;
+}
+nav ul {
+    background: rgb(47, 116, 62);
+    /* box-shadow settings can be whatever you want */
+    box-shadow: 3px 3px 3px rgb(76, 206, 50);
+    padding: 5px;
+    border-radius: 4px;
+    list-style: none;
+    position: relative;
+    color: rgb(24, 211, 40);
+    text-shadow: 1px 1px 1px black;
+    /* font-weight can be whatever you want */
+    font-weight:500px;
+}
+nav ul li {
+    display:inline-table;
+    margin:10px;
+    padding:5px;
+    color: whitesmoke;
+}
+nav ul li:hover {
+    color: rgb(0, 255, 98);
+    /*  font-size should be a relative measurement */
+    font-size: 1.2em;
+}
+nav ul li a {
+    display: block;
+    /* the padding can be in pixels */
+    padding: 1px;
+    color: rgb(5, 201, 5);
+    text-shadow: 3px;
+    text-decoration: none;
+}
+nav ul li:hover a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+nav ul li:hover > ul {
+    display:flex;
+    flex-direction:column;
+}
+
+nav ul ul {
+    display: none;
+    background: rgb(20, 255, 12);
+    /* the border color can be whatever you want */
+    border:2px solid black;
+    border-radius: 0px;
+    padding: 0px;
+    position: absolute;
+   /*  font-size should be a relative measurement */
+    font-size: 1em;
+    z-index:10;
+}
+
+nav ul ul li {
+    display:block;
+    /*  you can adjust the border top and bottom colors to whatever you want */
+    border-top: 1.5px solid rgb(76, 206, 50);
+    border-bottom: 1.5px solid rgb(76, 206, 50);
+    position: relative;
+    text-align: left;
+    background: rgb(20, 255, 12);
+}
+nav ul ul li a {
+    padding: 15px;
+    color: whitesmoke;
+}    
+nav ul ul li a:hover {
+    background: rgb(20, 255, 12);
+    color: whitesmoke;
+}
