@@ -1,0 +1,85 @@
+<html>
+<html lang = "en">
+<head>
+<title> Hack </title>
+<meta charset = "UTF-8" />
+<link href="css/index.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+    body{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 14pt;
+    }
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: 	rgb(0, 0, 0);
+        text-shadow: 2px 1px rgb(52, 248, 95);
+    }
+    button{
+        background-color: #070101; 
+        border: 3px solid rgb(37, 211, 74);
+        padding: 1% 1%;
+        margin: 2px;
+        font-size: 1em;
+        color: rgb(31, 211, 70);
+        text-align: center;
+        text-decoration: none;
+    }
+    button:hover{
+        background-color: rgb(33, 199, 69);
+        color: 	#070101;;
+    }
+
+    div{
+        width: 100%;
+        text-align: center;
+        margin-top: 2%;
+    }
+    canvas{
+        display: inline;
+        border: 10px solid rgb(33, 199, 69);
+    }
+    footer{
+        text-align: center;
+        margin-top: 2%;
+        color: black;
+        text-shadow: 1px, 1px rgb(33, 199, 69);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+    </div>
+        <ul class="nav navbar-nav">
+            <li ><a href="GameHomePage.html">Home</a></li>
+            <li class="active"><a href="Hack.html">Hack</a></li>
+            <li><a href="Battle.html">Battle Simulation</a></li>
+            <li><a href="Fantasy.html">Fantasy Times</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="header">
+<h1>Welcome to Hack...please wait while your program is loading....</h1>
+<h2>Use the arrow keys to move...</h2>
+</div>
+<body onload="startGame()">
+    <h1>Hack The Net</h1>
+    <div>
+        <button id="playAgain" onclick="location=URL">Play Again</button>
+    </div>
+    <div id="canvasDiv">
+        <canvas id="myCanvas"> Your browser does not support the HTML5 canvas tag.</canvas>
+    </div>
+    <footer>Alexandru Juhasz &copy; </footer>
+<script src="js/canvasGame.js"></script>
+
+
+</body>
+</html>
