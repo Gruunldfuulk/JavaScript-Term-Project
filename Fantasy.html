@@ -6,6 +6,81 @@
 <link href="css/index.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/game.js"></script>
+
+<style>
+    nav li{
+        color: rgb(0, 0, 0);
+        background:rgb(153, 141, 88);
+    }
+    nav ul li{
+        color: rgb(0, 0, 0);
+        background:rgb(153, 141, 88);
+    }
+    nav ul{
+        color: rgb(0, 0, 0);
+        background:rgb(153, 141, 88);
+    }
+    nav ul ul li{
+        color: rgb(0, 0, 0);
+        background:rgb(153, 141, 88);
+    }
+
+    footer, header{
+    opacity: 80%;
+    width: 100%;
+    height: 30px;
+    Background: rgb(153, 141, 88);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    font-family: CuteFront-Regular;
+}
+    body{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 16pt;
+        background-image: url(media/fantasy_background.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    text{
+        font-size: 16pt;
+        background: rgb(153, 141, 88);
+        color:rgb(0, 0, 0); 
+    }
+    h1{
+        margin-left: 10%;
+        text-align: center;
+        width: 80%;
+        font-size: 2em;
+        color: 	rgb(0, 0, 0);
+        background: rgb(153, 141, 88);
+        text-shadow: 2px 1px rgb(97, 89, 56);
+    }
+    h2{
+        margin-left: 20%;
+        text-align: center;
+        width: 60%;
+        font-size: 1em;
+        color: 	rgb(0, 0, 0);
+        background: rgb(153, 141, 88);
+        text-shadow: 2px 1px rgb(102, 94, 59);
+    }
+
+    button{
+    width: 10%;
+    height: 40px;
+    Background: rgb(153, 141, 88);
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    align-self: center;
+    font-family: CuteFront-Regular;
+    justify-content:space-between;
+    margin-left: 10%;
+}
+
+</style>
+
 </head>
 <body>
 
@@ -22,7 +97,20 @@
         </ul>
     </div>
 </nav>
-
 <div>
     <h1>Welcome to Fantasy Times...please wait while your program is loading....</h1>
 </div>
+<body onload="goto('start')">
+    <div id="wrapper">
+        <div id="story"></div>
+        <div class="space">
+            <div id="choices" class="page input"></div>
+        </div>
+    </div>
+</body>
+
+
+
+<footer>Alexandru Juhasz &copy; </footer>
+</body>
+</html>
